@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"   // ✅ optional, good for catching issues
   },
   "dependencies": {
     "lucide-react": "^0.544.0",
@@ -21,6 +22,7 @@
     "@types/react-dom": "^19",
     "mini-css-extract-plugin": "^2.9.4",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "@netlify/plugin-nextjs": "^5.8.0"   
   }
 }
