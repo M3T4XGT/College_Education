@@ -57,7 +57,10 @@ export default function HomeFactGallery() {
         <figure className={styles.homeFactsGallery__fContent}>
           <p>Top Performers on Social Mobility</p>
           <figcaption>
-            <a href="https://www.usnews.com/best-colleges/juniata-college-3279">
+            <a
+              href="https://www.usnews.com/best-colleges/juniata-college-3279"
+              style={{ color: "#ffffff", textDecoration: "underline" }}
+            >
               Times Higher Education Impact Rankings
             </a>
             , 2023
