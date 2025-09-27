@@ -1,0 +1,93 @@
+.statsSection {
+  position: relative;
+  background: center / cover no-repeat url("/juniata-entrance-2560-776.jpg");
+  min-height: 60vh; /* hero-style height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  overflow: hidden;
+}
+
+/* 🔹 Transparent blue overlay */
+.statsSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(29, 52, 100, 0.75); /* Juniata blue w/ slight opacity */
+  z-index: 1;
+}
+
+/* 🔹 Grid layout */
+.statsGrid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 🔹 Each stat card */
+.statCard {
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6); /* stronger readability */
+  background: rgba(0, 0, 0, 0.15); /* subtle translucent background */
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-6px);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* 🔹 Number */
+.statCard h2 {
+  font-size: 3rem;   /* larger emphasis */
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  color: #f1be48;    /* Old Gold for highlight */
+}
+
+/* 🔹 Description */
+.statCard p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #fff;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+/* ---------------- Responsive ---------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .statCard h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .statCard {
+    padding: 1.5rem;
+  }
+  .statCard h2 {
+    font-size: 2.2rem;
+  }
+  .statCard p {
+    font-size: 0.95rem;
+  }
+}

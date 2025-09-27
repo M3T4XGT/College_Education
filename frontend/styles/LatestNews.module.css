@@ -1,0 +1,109 @@
+.latestNews {
+  background: #f2f2f2; /* light gray */
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+/* Title with gold borders */
+.sectionTitle {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #53565a; /* Cool Gray 11 */
+  border-top: 4px solid #ac9d6e; /* Old Gold */
+  border-bottom: 4px solid #ac9d6e;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* News grid */
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card */
+.newsCard {
+  background: #fff;
+  border: 2px solid #e5e5e5;
+  padding: 1.25rem;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsCard:hover {
+  transform: translateY(-6px);
+  border-color: #ac9d6e;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 160px; /* consistent thumbnail sizing */
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Title */
+.newsTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1d3464; /* Juniata Blue */
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin-top: auto;
+  transition: color 0.2s ease;
+}
+
+.newsCard:hover .newsTitle {
+  color: #ac9d6e;
+}
+
+/* ---------------- Responsive ---------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .newsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .newsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .imageWrapper {
+    height: 200px; /* taller images on mobile */
+  }
+
+  .sectionTitle {
+    font-size: 1.1rem;
+  }
+
+  .newsTitle {
+    font-size: 0.95rem;
+  }
+}

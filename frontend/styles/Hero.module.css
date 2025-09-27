@@ -1,0 +1,130 @@
+.heroSection {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Content aligned left */
+  color: #fff;
+  overflow: hidden;
+  padding-left: 5%; /* breathing room from edge */
+}
+
+/* 🔹 Background video */
+.heroVideo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* 🔹 Gradient overlay */
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(1, 33, 105, 0.8) 0%,
+    rgba(1, 33, 105, 0.4) 40%,
+    rgba(1, 33, 105, 0) 100%
+  );
+  z-index: 1;
+}
+
+/* Content */
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  text-align: left;
+  padding: 2rem 1rem;
+}
+
+/* Logo */
+.heroLogo {
+  max-width: 250px;
+  margin-bottom: 1.5rem;
+}
+
+/* Heading */
+.heroContent h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* CTA button */
+.ctaButton {
+  display: inline-block;
+  background: #d4af37;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: #b38e1e;
+}
+
+/* ----------------- 🔹 Responsive ----------------- */
+
+/* Tablet (≤ 992px) */
+@media (max-width: 992px) {
+  .heroSection {
+    height: 80vh; /* smaller hero */
+    padding-left: 3%;
+  }
+
+  .heroContent {
+    max-width: 400px;
+    padding: 1.5rem;
+  }
+
+  .heroLogo {
+    max-width: 200px;
+  }
+
+  .heroContent h1 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .heroSection {
+    height: auto;
+    min-height: 70vh; /* still gives a hero feel */
+    padding: 2rem 1rem;
+    justify-content: center; /* center content on mobile */
+    text-align: center;
+  }
+
+  .heroContent {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .heroLogo {
+    max-width: 180px;
+    margin: 0 auto 1rem;
+  }
+
+  .heroContent h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .ctaButton {
+    width: 100%; /* full width button */
+    text-align: center;
+    padding: 0.8rem 1rem;
+  }
+}

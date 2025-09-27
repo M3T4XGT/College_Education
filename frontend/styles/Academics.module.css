@@ -1,0 +1,180 @@
+.academicsSection {
+  position: relative;
+  background: #fff;
+  padding: 5rem 2rem;
+  overflow: hidden; /* keep overlay inside */
+}
+
+/* 🔹 Transparent background image with gray overlay */
+.academicsSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* background image + gray overlay */
+  background: 
+    linear-gradient(rgba(50, 50, 50, 0.65), rgba(50, 50, 50, 0.65)), 
+    url("/founders-summer-1680-500.jpg") no-repeat center/cover;
+
+  opacity: 0.9; 
+  z-index: 0;
+}
+
+.academicsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1; /* keep text above */
+}
+
+.academicsImage {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.academicsImage img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.academicsContent {
+  flex: 1 1 55%;
+}
+
+.sectionTitle {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  color: #edeaea;
+  position: relative;
+}
+
+.sectionTitle::after {  
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #f1be48;
+  margin-top: 0.5rem;
+}
+
+.academicsContent p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #edeaea;
+}
+
+.academicsStats {
+  margin-bottom: 1.5rem;
+}
+
+.statLink {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  border-bottom: 3px solid #f1be48;
+  width: fit-content;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.statLink:hover {
+  color: #f1be48;
+  border-color: #000;
+}
+
+.searchBox {
+  display: flex;
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+.searchBox input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.searchBox button {
+  background: #000;
+  color: #fff;
+  padding: 0.75rem 1.2rem;
+  border: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.searchBox button:hover {
+  background: #f1be48;
+}
+
+/* ----------------- 🔹 Responsive Styles ----------------- */
+
+/* Tablet (≤ 992px) */
+@media (max-width: 992px) {
+  .academicsContainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .academicsImage,
+  .academicsContent {
+    flex: 1 1 100%;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .statLink {
+    margin: 0.5rem auto; /* center stats links */
+  }
+
+  .searchBox {
+    margin: 1rem auto;
+  }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .academicsSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+
+  .academicsContent p {
+    font-size: 1rem;
+  }
+
+  .statLink {
+    font-size: 1.1rem;
+  }
+
+  .searchBox {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .searchBox input {
+    margin-bottom: 0.75rem;
+  }
+
+  .searchBox button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,105 @@
+
+/* --- Navbar container --- */
+.old-gold {
+  background: #ac9d6e;
+  color: #001b49;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+/* Prevent body content from hiding behind navbar */
+body {
+  margin: 0;
+  padding-top: 60px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Flex wrapper */
+.row.full {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+/* --- Logo --- */
+.logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: #001b49; /* dark blue permanent background */
+  padding: 0 12px;
+  margin-left: 1rem;   /* ✅ shift logo slightly right */
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* --- Navigation list --- */
+.top-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 2rem;
+  gap: 0.5rem;
+  height: 60px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+/* --- Navigation links --- */
+.top-links li a {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #001b49;
+  text-decoration: none;
+  height: 60px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect: dark blue background + white text */
+.top-links li a:hover {
+  background-color: #001b49;
+  color: #fff;
+}
+
+/* --- Icon links (Search + Menu) --- */
+.icon-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  color: #001b49;
+  font-size: 1.2rem;
+  height: 60px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.icon-links:hover {
+  background-color: #001b49;
+  color: #fff;
+}
+
+
+
