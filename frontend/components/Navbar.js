@@ -5,7 +5,7 @@ export default function Navbar() {
     <div className="old-gold row full">
       {/* Logo */}
       <a href="/" className="logo-link">
-        <img src="/college-logo.svg" alt="College Logo" className="logo" />
+        <img src="/logo-jc.png" alt="College Logo" className="logo" />
       </a>
 
       {/* Navigation */}

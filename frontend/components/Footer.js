@@ -53,7 +53,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="https://www.juniata.edu/academics/learning-commons//">
+              <Link href="https://www.juniata.edu/academics/learning-commons">
                 Library
               </Link>
             </li>
