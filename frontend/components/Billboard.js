@@ -9,7 +9,7 @@ export default function Billboard() {
       <div className={styles.billboardImage}>
         <Image
           src="/learning-commons-exterior.jpg" // <-- put your JPG in /public
-          alt="Juniata Campus"
+          alt="College Campus"
           fill
           priority
           className={styles.bgImage}
@@ -19,11 +19,11 @@ export default function Billboard() {
       {/* Overlay box */}
       <div className={styles.billboardOverlay}>
         <p>
-          Gifts to Juniata support students, faculty, programs and more. Your
-          generosity will impact the Juniata family for generations to come!
+          Gifts to College support students, faculty, programs and more. Your
+          generosity will impact the College family for generations to come!
         </p>
-        <Link href="https://www.juniata.edu/offices/gifts/">
-          <button className={styles.giveButton}>GIVE TO JUNIATA</button>
+        <Link href="/">
+          <button className={styles.giveButton}>GIVE TO College</button>
         </Link>
       </div>
     </section>

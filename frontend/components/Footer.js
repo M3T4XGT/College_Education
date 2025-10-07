@@ -9,7 +9,7 @@ export default function Footer() {
       <div className={styles.footerLogoRow}>
         <Image
           src="/full-logo-white.svg"
-          alt="Juniata College Logo"
+          alt="My College Logo"
           width={180}
           height={180}
           className={styles.footerLogo}
@@ -20,23 +20,17 @@ export default function Footer() {
       <div className={styles.footerContainer}>
         {/* Left Column: Address */}
         <div className={`${styles.footerColumn} ${styles.footerAddress}`}>
-          <h4 className={styles.collegeName}>Juniata College</h4>
-          <p>Huntingdon, PA 16652</p>
+          <h4 className={styles.collegeName}>My College</h4>
+          <p>Pittsburg, PA 16652</p>
           <p>
-            <Link href="https://www.juniata.edu/admission/campus-visit/map.php">
-              Campus & Parking Maps
-            </Link>
+            <Link href="/">Campus & Parking Maps</Link>
           </p>
           <p>(877) 586-4282</p>
           <p>
-            <Link href="https://www.juniata.edu/offices/human-resources/prospective-employee/openings.php">
-              Careers at Juniata
-            </Link>
+            <Link href="/">Careers at College</Link>
           </p>
           <p>
-            <Link href="https://www.juniata.edu/career-development/alumni/employing-students.php">
-              Hire Juniata Grads
-            </Link>
+            <Link href="/">Hire College Grads</Link>
           </p>
         </div>
 
@@ -45,56 +39,45 @@ export default function Footer() {
           <h4 className={styles.footerHeading}>Quick Links</h4>
           <ul className={styles.linkList}>
             <li>
-              <Link href="https://www.juniata.edu/offices/">Offices</Link>
+              <Link href="/">Offices</Link>
             </li>
             <li>
-              <Link href="https://juniata.bncollege.com/my-account/rental-order/orders">
-                Bookstore
-              </Link>
+              <Link href="/">Bookstore</Link>
             </li>
             <li>
-              <Link href="https://www.juniata.edu/academics/learning-commons">
-                Library
-              </Link>
+              <Link href="/">Library</Link>
             </li>
             <li>
-              <Link href="https://www.juniata.edu/offices/billing/index.php">
-                Billing
-              </Link>
+              <Link href="/">Billing</Link>
             </li>
             <li>
-              <Link href="https://arch.juniata.edu/today-at-juniata">Arch</Link>
+              <Link href="/">Arch</Link>
             </li>
           </ul>
         </div>
 
-        {/* Right Column: Follow Juniata */}
+        {/* Right Column: Follow College */}
         <div className={`${styles.footerColumn} ${styles.followJuniata}`}>
-          <h4 className={styles.footerHeading}>Follow Juniata</h4>
+          <h4 className={styles.footerHeading}>Follow College</h4>
 
           {/* Inline Links */}
           <div className={styles.followLinks}>
-            <Link href="/news">News</Link>
+            <Link href="/">News</Link>
             <span>|</span>
-            <Link href="/events">Events</Link>
+            <Link href="/">Events</Link>
             <span>|</span>
-            <Link
-              href="https://www.youtube.com/user/JuniataCollege"
-              target="_blank"
-            >
-              YouTube
-            </Link>
+            <Link href="/">YouTube</Link>
           </div>
 
           {/* Social Media Directory */}
           <div className={styles.socialDirectory}>
-            <Link href="/social-media-directory">Social Media Directory</Link>
+            <Link href="/">Social Media Directory</Link>
           </div>
 
           {/* Social Icons */}
           <ul className={styles.socialIcons}>
             <li>
-              <Link href="https://www.facebook.com/juniata" target="_blank">
+              <Link href="/">
                 <Image
                   src="/facebook_j.svg"
                   alt="Facebook"
@@ -104,15 +87,12 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="https://twitter.com/juniatacollege" target="_blank">
+              <Link href="/">
                 <Image src="/x_j.svg" alt="Twitter" width={28} height={28} />
               </Link>
             </li>
             <li>
-              <Link
-                href="https://www.instagram.com/juniata_college/"
-                target="_blank"
-              >
+              <Link href="/">
                 <Image
                   src="/instagram_j.svg"
                   alt="Instagram"
@@ -122,10 +102,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link
-                href="https://www.linkedin.com/school/20355"
-                target="_blank"
-              >
+              <Link href="/">
                 <Image
                   src="/linked-in_j.svg"
                   alt="LinkedIn"
@@ -135,10 +112,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link
-                href="https://www.youtube.com/user/JuniataCollege"
-                target="_blank"
-              >
+              <Link href="/">
                 <Image
                   src="/youtube_j.png"
                   alt="YouTube"
@@ -151,54 +125,33 @@ export default function Footer() {
 
           {/* Athletics Link */}
           <p className={styles.athleticsLink}>
-            <Link href="https://www.juniatasports.net/landing/index">
-              JUNIATA ATHLETICS &gt;&gt;
-            </Link>
+            <Link href="/">College ATHLETICS &gt;&gt;</Link>
           </p>
         </div>
       </div>
 
       {/* Bottom bar */}
-      {/* Bottom bar */}
-      {/* Bottom bar */}
-      {/* Bottom bar */}
       <div className={styles.footerBottom}>
         <p className={styles.copyright}>
-          © {new Date().getFullYear()} Juniata College. All rights reserved.
+          © {new Date().getFullYear()} My College. All rights reserved.
         </p>
 
         <div className={styles.bottomLinks}>
-          <Link href="https://www.juniata.edu/student-accessibility-services/">
-            Accessibility Services
-          </Link>
+          <Link href="/">Accessibility Services</Link>
           <span>|</span>
-          <Link href="https://www.juniata.edu/offices/security/">
-            Campus Safety
-          </Link>
+          <Link href="/">Campus Safety</Link>
           <span>|</span>
-          <Link href="https://www.juniata.edu/magazine/impact-report/index.php">
-            Access & Community Impact
-          </Link>
+          <Link href="/">Access & Community Impact</Link>
           <span>|</span>
-          <Link href="https://www.juniata.edu/offices/president/non-discrimination.php">
-            EEO Statement
-          </Link>
+          <Link href="/">EEO Statement</Link>
           <span>|</span>
-          <Link href="https://www.juniata.edu/about/presidents-office/policies/academic-affairs/itls/ethical-responsible-use-of-eaglenet.php">
-            Ethics Point
-          </Link>
+          <Link href="/">Ethics Point</Link>
           <span>|</span>
-          <Link href="https://www.juniata.edu/privacy-policy.php">
-            Privacy Notice
-          </Link>
+          <Link href="/">Privacy Notice</Link>
           <span>|</span>
-          <Link href="https://www.juniata.edu/about/presidents-office/policies/index.php">
-            Terms of Service
-          </Link>
+          <Link href="/">Terms of Service</Link>
           <span>|</span>
-          <Link href="https://www.juniata.edu/offices/marketing/social-media-strategy/logo-usage.php">
-            Trademarks
-          </Link>
+          <Link href="/">Trademarks</Link>
         </div>
       </div>
     </footer>

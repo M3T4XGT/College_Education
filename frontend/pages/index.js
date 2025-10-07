@@ -6,11 +6,11 @@ export default function Home() {
   const [programs, setPrograms] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/news")
+    fetch("/")
       .then((res) => res.json())
       .then((data) => setNews(data));
 
-    fetch("http://localhost:4000/api/programs")
+    fetch("/")
       .then((res) => res.json())
       .then((data) => setPrograms(data));
   }, []);

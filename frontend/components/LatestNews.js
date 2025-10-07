@@ -6,24 +6,22 @@ export default function LatestNews() {
   const newsItems = [
     {
       id: 1,
-      title:
-        "Juniata College senior joins national cohort of Newman Civic Fellows",
-      image: "/Newman.jpg", // place in /public
-      link: "https://www.juniata.edu/about/news/archive.php?action=SHOWARTICLE&id=7223",
+      title: "My College senior joins national cohort of Newman Civic Fellows",
+      image: "/Newman.jpg",
+      link: "/",
     },
     {
       id: 2,
       title:
-        "A degree, fifty years in the making: Pete Lentini '75 completes his Juniata journey",
+        "A degree, fifty years in the making: Pete Lentini '75 completes his college journey",
       image: "/Pete Lentini-6.jpg",
-      link: "https://www.juniata.edu/about/news/",
+      link: "/",
     },
     {
       id: 3,
-      title:
-        "Juniata College Museum of Art brings William Scharf's legacy to life",
+      title: "My College Museum of Art brings William Scharf's legacy to life",
       image: "/JCMA-2.jpg",
-      link: "https://www.juniata.edu/about/news/",
+      link: "/",
     },
   ];
 
@@ -31,7 +29,7 @@ export default function LatestNews() {
     <section className={styles.latestNews}>
       {/* Section Title */}
       <div className={styles.sectionTitle}>
-        <span>THE LATEST FROM JUNIATA COLLEGE</span>
+        <span>THE LATEST FROM MY COLLEGE</span>
       </div>
 
       {/* News Grid */}

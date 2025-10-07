@@ -9,8 +9,7 @@ export default function HomeFactGallery() {
         <figure className={styles.homeFactsGallery__aContent}>
           <p>Ranked #18 of 83 Best Colleges for Biology in Pennsylvania</p>
           <figcaption>
-            <a href="https://www.niche.com/colleges/juniata-college/">Niche</a>,
-            2024
+            <a href="/">Niche</a>, 2024
           </figcaption>
         </figure>
       </div>
@@ -25,10 +24,7 @@ export default function HomeFactGallery() {
         <figure className={styles.homeFactsGallery__cContent}>
           <p>Experiential education at its finest.</p>
           <figcaption>
-            <a href="http://juniataadmission.com/category/experiential-learning/">
-              JOO-NEE-AT-UH
-            </a>
-            , 2025
+            <a href="/">My-college-website</a>, 2025
           </figcaption>
         </figure>
       </div>
@@ -43,10 +39,7 @@ export default function HomeFactGallery() {
         <figure className={styles.homeFactsGallery__eContent}>
           <p>#92 in National Liberal Arts Colleges</p>
           <figcaption>
-            <a href="https://www.usnews.com/best-colleges/juniata-college-3279">
-              Newsweek
-            </a>
-            , 2026 Edition
+            <a href="/">Newsweek</a>, 2026 Edition
           </figcaption>
         </figure>
       </div>
@@ -58,7 +51,7 @@ export default function HomeFactGallery() {
           <p>Top Performers on Social Mobility</p>
           <figcaption>
             <a
-              href="https://www.usnews.com/best-colleges/juniata-college-3279"
+              href="/"
               style={{ color: "#ffffff", textDecoration: "underline" }}
             >
               Times Higher Education Impact Rankings
